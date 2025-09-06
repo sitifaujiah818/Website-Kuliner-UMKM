@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Sedap - Pesan Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="navbar-logo">Kuliner UXplore</a>
+        <nav class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#produk">Menu</a>
+            <a href="#testimoni">Testimoni</a>
+        </nav>
+        <div class="navbar-extra">
+            <a href="#" id="cart-button">
+                <img src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png" alt="Keranjang"/>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="#" id="hamburger-menu">☰</a>
+        </div>
+    </header>
+
+    <main id="app-container">
+        <section id="home" class="hero">
+            <div class="content">
+                <h1>Rasa Asli Warisan Keluarga Cirebon</h1>
+                <p>Setiap hidangan dibuat dengan resep turun-temurun dan bahan baku segar pilihan untuk Anda nikmati.</p>
+                <a href="#produk" class="cta">Lihat Semua Menu</a>
+            </div>
+        </section>
+
+        <section class="value-prop">
+             <div class="prop-item">
+                <img src="https://img.icons8.com/ios/50/b6895b/natural-food.png" alt="Bahan Segar"/>
+                <h4>Bahan Segar Pilihan</h4>
+            </div>
+            <div class="prop-item">
+                <img src="https://img.icons8.com/ios/50/b6895b/halal-sign.png" alt="100% Halal"/>
+                <h4>100% Halal</h4>
+            </div>
+            <div class="prop-item">
+                <img src="https://img.icons8.com/ios/50/b6895b/delivery--v1.png" alt="Pesan Antar Cepat"/>
+                <h4>Pesan Antar Cepat</h4>
+            </div>
+        </section>
+
+        <section id="produk" class="produk">
+            <h2>Menu Terlaris Kami</h2>
+            <div class="produk-container">
+            </div>
+        </section>
+
+        <section id="testimoni" class="testimoni">
+            <h2>Apa Kata Mereka?</h2>
+            <div class="testimoni-container">
+                <div class="testimoni-card animate-on-scroll">
+                    <img src="https://via.placeholder.com/100" alt="Pelanggan 1" class="testimoni-img">
+                    <blockquote>"Makanannya juara! Nasi gorengnya paling ajiib, bumbunya pas banget. Pasti pesan lagi!"</blockquote>
+                    <cite>- Budi Santoso</cite>
+                </div>
+                <div class="testimoni-card animate-on-scroll">
+                    <img src="https://via.placeholder.com/100" alt="Pelanggan 2" class="testimoni-img">
+                    <blockquote>"Pelayanannya cepat dan ramah. Kemasannya juga rapi dan bersih. Recommended!"</blockquote>
+                    <cite>- Citra Lestari</cite>
+                </div>
+            </div>
+        </section>
+        
+        <footer id="kontak">
+             <div class="footer-cta">
+                <h3>Siap Mencicipi Kelezatan Kami?</h3>
+                <a href="#produk" class="cta">Pesan Sekarang</a>
+            </div>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </div>
+            <div class="credit">
+                <p>Dibuat oleh Kelompok Desain UXplore | &copy; 2025</p>
+            </div>
+        </footer>
+    </main>
+
+    <aside id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button id="close-cart-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items-container"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total">Rp 0</span>
+            </div>
+            <button class="cta" id="checkout-btn">Lanjutkan ke Checkout</button>
+        </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
